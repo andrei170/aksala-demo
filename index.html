@@ -227,6 +227,69 @@
   .hero-stat .num { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; color: var(--navy); line-height: 1; font-weight: 600; }
   .hero-stat .label { color: var(--text-muted); font-size: 0.88rem; margin-top: 0.2rem; }
 
+  /* PRESS STRIP */
+  .press-strip {
+    background: var(--bg-deep);
+    padding: 2.4rem 0;
+    border-bottom: 1px solid var(--gray-line);
+  }
+  .press-strip .label {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-bottom: 1.4rem;
+    font-weight: 600;
+  }
+  .press-strip .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.8rem;
+    flex-wrap: wrap;
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--navy);
+  }
+  .press-strip .logos span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    opacity: 0.72;
+    transition: opacity 0.2s;
+  }
+  .press-strip .logos span:hover { opacity: 1; }
+  .press-strip .logos .forbes { font-family: 'Times New Roman', serif; font-weight: 700; font-style: italic; font-size: 1.6rem; letter-spacing: -0.02em; color: var(--navy); }
+  .press-strip .logos .yahoo { font-family: 'Inter', sans-serif; font-weight: 700; color: #6001D2; opacity: 0.78; }
+  .press-strip .logos .bi { font-family: 'Inter', sans-serif; font-weight: 700; color: var(--navy); letter-spacing: -0.03em; }
+  .press-strip .logos .herald { font-style: italic; }
+  .press-strip .logos .fortune { font-family: 'Times New Roman', serif; font-weight: 700; text-transform: uppercase; font-size: 1.05rem; letter-spacing: 0.08em; }
+
+  /* REG DISCLOSURE */
+  .regulatory-disclosure {
+    background: var(--navy-dark);
+    border-top: 1px solid rgba(192, 141, 44, 0.18);
+    padding: 1.8rem 0;
+    color: rgba(248, 248, 245, 0.55);
+    font-size: 0.78rem;
+    line-height: 1.55;
+  }
+  .regulatory-disclosure .container { max-width: 1100px; }
+  .regulatory-disclosure p { margin-bottom: 0.7rem; }
+  .regulatory-disclosure a { color: var(--gold); }
+  .regulatory-disclosure .reg-links {
+    display: flex;
+    gap: 1.4rem;
+    flex-wrap: wrap;
+    margin-top: 0.8rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid rgba(248, 248, 245, 0.08);
+  }
+  .regulatory-disclosure .reg-links a {
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+  }
+
   /* VSL SECTION */
   .vsl-section {
     background: var(--bg);
@@ -543,7 +606,7 @@
       </p>
       <div class="hero-cta">
         <a href="#contact" class="btn-primary">Schedule a Consultation</a>
-        <a href="#why" class="btn-secondary">Why Independent Matters</a>
+        <a href="tel:+19415005122" class="btn-secondary">Call 941.500.5122</a>
       </div>
     </div>
     <div class="hero-card">
@@ -568,6 +631,19 @@
   </div>
 </section>
 
+<div class="press-strip">
+  <div class="container">
+    <div class="label">As Featured In</div>
+    <div class="logos">
+      <span class="forbes">Forbes</span>
+      <span class="yahoo">yahoo!finance</span>
+      <span class="bi">BUSINESS INSIDER</span>
+      <span class="fortune">Fortune</span>
+      <span class="herald">Sarasota Herald-Tribune</span>
+    </div>
+  </div>
+</div>
+
 <section class="vsl-section">
   <div class="container">
     <div>
@@ -586,6 +662,7 @@
       </div>
     </div>
   </div>
+  <p style="text-align: center; font-size: 0.82rem; color: var(--text-muted); margin-top: 1.4rem; font-style: italic; letter-spacing: 0.04em;">Placeholder for the founder VSL filmed by Verbatim Video on May 9, 2026. Final video embeds here on launch.</p>
 </section>
 
 <div class="credential-strip">
@@ -764,7 +841,10 @@
   <div class="container">
     <h2>Wealth deserves a planning partner who knows your name.</h2>
     <p>If you are exploring whether boutique fiduciary advice is the right fit, the first conversation is informational. No commitment, no sales pressure. Bring questions, leave with clarity.</p>
-    <a href="mailto:info@aksalawealth.com" class="btn-primary" style="font-size: 1rem;">Schedule a Consultation</a>
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <a href="https://calendly.com/ag-copy/call-with-andrei" class="btn-primary" style="font-size: 1rem;">Book a Consultation</a>
+      <a href="tel:+19415005122" class="btn-secondary" style="font-size: 1rem; color: var(--bg) !important; border-color: var(--bg);">Or call 941.500.5122</a>
+    </div>
   </div>
 </section>
 
@@ -803,10 +883,25 @@
   </div>
   <div class="container">
     <div class="footer-bottom">
-      Demo built by Andrei Givero, AG1 Consulting. info@andreicopy.net &middot; <a href="https://andrei170.github.io/ag1/">andrei170.github.io/ag1</a>
+      Demo built by Andrei Givero, AG1 Consulting. info@andreicopy.net &middot; <a href="https://andrei170.github.io/ag1/#services">SEO and AEO services at AG1</a>
     </div>
   </div>
 </footer>
+
+<div class="regulatory-disclosure">
+  <div class="container">
+    <p><strong style="color: rgba(248, 248, 245, 0.85);">Important Disclosures.</strong> Aksala Wealth Advisors is a registered investment adviser. Registration as an investment adviser does not imply any level of skill or training. Investment advisory services are offered through Aksala Wealth Advisors. The information contained on this site is provided for general informational purposes and should not be construed as a solicitation or offer to buy or sell any securities. All investments involve risk, including the possible loss of principal. Past performance is not indicative of future results.</p>
+    <p>The Forbes Best-In-State Wealth Advisors ranking is developed by SHOOK Research based on a combination of quantitative criteria including assets under management, revenue produced for the firm, and qualitative criteria such as compliance record, industry experience, and credentials. The ranking is not based on the experience of any specific client. Inclusion on the list does not constitute an endorsement of an advisor by Forbes, SHOOK Research, or Aksala Wealth Advisors.</p>
+    <div class="reg-links">
+      <a href="https://brokercheck.finra.org/">FINRA BrokerCheck</a>
+      <a href="https://adviserinfo.sec.gov/">SEC Investment Adviser Public Disclosure</a>
+      <a href="#">Form CRS</a>
+      <a href="#">ADV Part 2A</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
