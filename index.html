@@ -6,6 +6,20 @@
 <title>Aksala Wealth Advisors | Florida #15 on Forbes 2026 Best-In-State</title>
 <meta name="description" content="Aksala Wealth Advisors. Independent fiduciary wealth management in Lakewood Ranch, Florida. Evan R. Guido ranked #15 in Florida on the Forbes 2026 Best-In-State Wealth Advisors list. Specializing in retirement transition, business exit planning, and multigenerational wealth.">
 
+<link rel="icon" type="image/png" href="https://static.fmgsuite.com/media/images/2ab8ab31-6668-4adc-8705-d1e9f7c8db3a.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aksala Wealth Advisors | Florida #15 on Forbes 2026 Best-In-State">
+<meta property="og:description" content="Independent fiduciary wealth management in Lakewood Ranch, Florida. Evan R. Guido ranked #15 in Florida on the Forbes 2026 Best-In-State Wealth Advisors list. Retirement transition, business exit, multigenerational wealth.">
+<meta property="og:image" content="https://static.fmgsuite.com/media/TeamMemberPortrait/variantSize/dcfd09c6-fcc6-4192-aae7-24da36ede71a.jpg?v=1">
+<meta property="og:url" content="https://andrei170.github.io/aksala-demo/">
+<meta property="og:site_name" content="Aksala Wealth Advisors">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Aksala Wealth Advisors | Forbes 2026 #15 in Florida">
+<meta name="twitter:description" content="Independent fiduciary wealth management. Evan R. Guido, Forbes 2026 Best-In-State #15 Florida.">
+<meta name="twitter:image" content="https://static.fmgsuite.com/media/TeamMemberPortrait/variantSize/dcfd09c6-fcc6-4192-aae7-24da36ede71a.jpg?v=1">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -16,8 +30,8 @@
   "@type": "FinancialService",
   "name": "Aksala Wealth Advisors",
   "url": "https://www.aksala.com",
-  "logo": "https://www.aksala.com/logo.png",
-  "image": "https://www.aksala.com/logo.png",
+  "logo": "https://static.fmgsuite.com/media/images/2ab8ab31-6668-4adc-8705-d1e9f7c8db3a.png",
+  "image": "https://static.fmgsuite.com/media/TeamMemberPortrait/variantSize/dcfd09c6-fcc6-4192-aae7-24da36ede71a.jpg",
   "telephone": "+1-941-500-5122",
   "email": "info@aksalawealth.com",
   "address": {
@@ -213,6 +227,74 @@
   .hero-stat .num { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; color: var(--navy); line-height: 1; font-weight: 600; }
   .hero-stat .label { color: var(--text-muted); font-size: 0.88rem; margin-top: 0.2rem; }
 
+  /* VSL SECTION */
+  .vsl-section {
+    background: var(--bg);
+    padding: 5rem 0 5.5rem;
+    border-bottom: 1px solid var(--gray-line);
+  }
+  .vsl-section .container { display: grid; grid-template-columns: 1fr 1.4fr; gap: 3.6rem; align-items: center; }
+  .vsl-section h2 { margin-bottom: 1.2rem; }
+  .vsl-section p { color: var(--text-muted); font-size: 1.05rem; }
+  .vsl-frame {
+    position: relative;
+    background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
+    border-radius: 4px;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(17, 60, 108, 0.25);
+    border: 1px solid rgba(192, 141, 44, 0.3);
+  }
+  .vsl-frame::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(192, 141, 44, 0.15) 0%, transparent 60%);
+  }
+  .vsl-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 96px;
+    height: 96px;
+    background: var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 0 rgba(192, 141, 44, 0.6);
+    animation: pulse-gold 2.4s infinite;
+    cursor: pointer;
+  }
+  .vsl-play svg { width: 36px; height: 36px; color: var(--navy-dark); margin-left: 5px; }
+  @keyframes pulse-gold {
+    0% { box-shadow: 0 0 0 0 rgba(192, 141, 44, 0.5); }
+    70% { box-shadow: 0 0 0 24px rgba(192, 141, 44, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(192, 141, 44, 0); }
+  }
+  .vsl-caption {
+    position: absolute;
+    bottom: 1.6rem;
+    left: 1.6rem;
+    right: 1.6rem;
+    color: rgba(248, 248, 245, 0.85);
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+  }
+  .vsl-caption strong { color: var(--gold); font-weight: 600; }
+  .vsl-runtime {
+    position: absolute;
+    top: 1.4rem;
+    right: 1.4rem;
+    background: rgba(0,0,0,0.55);
+    color: var(--bg);
+    font-size: 0.78rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 2px;
+    letter-spacing: 0.05em;
+  }
+
   /* CREDENTIAL STRIP */
   .credential-strip {
     background: var(--navy);
@@ -305,13 +387,18 @@
     text-align: center;
     border-radius: 2px;
   }
-  .founder-monogram {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 5.4rem;
-    color: var(--gold);
-    line-height: 1;
+  .founder-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 3px solid var(--gold);
     margin-bottom: 1.4rem;
-    font-weight: 500;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
   }
   .founder-card .name { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--bg); margin-bottom: 0.3rem; }
   .founder-card .title { color: rgba(248, 248, 245, 0.7); font-size: 0.9rem; letter-spacing: 0.08em; text-transform: uppercase; }
@@ -399,6 +486,7 @@
   /* RESPONSIVE */
   @media (max-width: 900px) {
     .hero .container { grid-template-columns: 1fr; gap: 2.4rem; }
+    .vsl-section .container { grid-template-columns: 1fr; gap: 2rem; }
     .credential-strip .container { grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
     .credential-strip .cred { border-right: none; padding: 0.6rem 0; }
     .why-grid { grid-template-columns: 1fr; }
@@ -407,6 +495,8 @@
     .founder-grid { grid-template-columns: 1fr; }
     .testimonial-grid { grid-template-columns: 1fr; }
     footer .container { grid-template-columns: 1fr 1fr; }
+    nav.main ul { gap: 1rem; font-size: 0.9rem; }
+    nav.main ul li:not(:last-child) { display: none; }
   }
 </style>
 </head>
@@ -449,7 +539,7 @@
       </div>
       <h1>Independent wealth management for the families who built it the hard way.</h1>
       <p class="lede">
-        Boutique fiduciary advisory for high-net-worth retirees, business owners, and multigenerational families across Sarasota, Lakewood Ranch, and the broader Florida corridor. Approximately one billion dollars under advisement. One family at a time.
+        Boutique fiduciary advisory for high-net-worth retirees, business owners, and multigenerational families across Sarasota, Lakewood Ranch, and the broader Florida corridor. Approaching $1 billion under advisement (per Forbes 2026 reporting). One family at a time.
       </p>
       <div class="hero-cta">
         <a href="#contact" class="btn-primary">Schedule a Consultation</a>
@@ -460,7 +550,7 @@
       <h4>The Firm at a Glance</h4>
       <div class="hero-stat">
         <div class="num">~$1B</div>
-        <div class="label">Assets Under Advisement</div>
+        <div class="label">Assets Under Advisement (per Forbes 2026)</div>
       </div>
       <div class="hero-stat">
         <div class="num">#15</div>
@@ -471,8 +561,28 @@
         <div class="label">Fiduciary obligation, no commission products</div>
       </div>
       <div class="hero-stat">
-        <div class="num">3</div>
-        <div class="label">Generations of family wealth planning typical engagement</div>
+        <div class="num">2002</div>
+        <div class="label">Year Evan R. Guido entered the investment business</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="vsl-section">
+  <div class="container">
+    <div>
+      <div class="eyebrow" style="color: var(--gold-dark); font-size: 0.82rem; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 1rem; font-weight: 600;">A Message from Evan</div>
+      <h2>Why we built Aksala the way we did.</h2>
+      <p>Three minutes with the founder. Why independence matters in wealth management, who the firm was built to serve, and what the first conversation looks like for families exploring whether boutique advisory is the right fit.</p>
+      <p style="margin-top: 1.2rem; font-size: 0.92rem; color: var(--gold-dark); font-style: italic;">Video produced by Verbatim Video, Sarasota.</p>
+    </div>
+    <div class="vsl-frame">
+      <div class="vsl-runtime">3:14</div>
+      <div class="vsl-play" aria-label="Play founder message">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+      </div>
+      <div class="vsl-caption">
+        <strong>Evan R. Guido</strong> &nbsp;|&nbsp; President, Aksala Wealth Advisors &nbsp;|&nbsp; Forbes 2026 Best-In-State #15 Florida
       </div>
     </div>
   </div>
@@ -596,7 +706,7 @@
   <div class="container">
     <div class="founder-grid">
       <div class="founder-card">
-        <div class="founder-monogram">EG</div>
+        <img class="founder-photo" src="https://static.fmgsuite.com/media/TeamMemberPortrait/variantSize/dcfd09c6-fcc6-4192-aae7-24da36ede71a.jpg" alt="Evan R. Guido, President and Founder of Aksala Wealth Advisors">
         <div class="name">Evan R. Guido</div>
         <div class="title">President &amp; Founder</div>
       </div>
@@ -628,21 +738,21 @@
       <div class="testimonial">
         <div class="mark">&ldquo;</div>
         <blockquote>
-          As relocated retirees, the comfort and thoroughness Aksala brought to our planning made the transition to Florida something we could enjoy instead of worry about.
+          As recent retirees we relocated to Florida and were looking for an advisor&hellip; We truly feel like we&rsquo;ve landed in the right place with Aksala.
         </blockquote>
         <div class="attrib">Steve Saladino</div>
       </div>
       <div class="testimonial">
         <div class="mark">&ldquo;</div>
         <blockquote>
-          Exceptional service over many years. Responsive when it matters, proactive when nobody else would have caught it. Aksala is the partner I refer my closest friends to.
+          The team at Aksala Wealth Advisors have provided exceptional service over many years. They are responsive and always available to provide guidance&hellip; Our family highly recommends this first class team!
         </blockquote>
         <div class="attrib">Cristne Faes</div>
       </div>
       <div class="testimonial">
         <div class="mark">&ldquo;</div>
         <blockquote>
-          Personalized attention and comprehensive guidance through what was, for our family, a complex liquidity event. The team treated our situation like it was the only one on their desk.
+          Evan Guido and his staff make you feel as if you are their only client. They guided my parents though numerous aspects of sound financial planning and now oversee our portfolio.
         </blockquote>
         <div class="attrib">Scott Routsong</div>
       </div>
