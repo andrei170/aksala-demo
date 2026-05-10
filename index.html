@@ -6,7 +6,7 @@
 <title>Aksala Wealth Advisors | Florida #15 on Forbes 2026 Best-In-State</title>
 <meta name="description" content="Aksala Wealth Advisors. Independent fiduciary wealth management in Lakewood Ranch, Florida. Evan R. Guido ranked #15 in Florida on the Forbes 2026 Best-In-State Wealth Advisors list. Specializing in retirement transition, business exit planning, and multigenerational wealth.">
 
-<link rel="icon" type="image/png" href="https://static.fmgsuite.com/media/images/2ab8ab31-6668-4adc-8705-d1e9f7c8db3a.png">
+<link rel="icon" type="image/png" href="https://static.fmgsuite.com/media/WebsiteFavicon/variantSize/f23a42e1-5758-47b2-9fd7-33b46d7046f4.png">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Aksala Wealth Advisors | Florida #15 on Forbes 2026 Best-In-State">
@@ -176,10 +176,23 @@
   /* HERO */
   .hero {
     padding: 6rem 0 5rem;
-    background: linear-gradient(to bottom, var(--bg) 0%, var(--bg-deep) 100%);
+    background-image:
+      linear-gradient(to right, rgba(248, 248, 245, 0.96) 0%, rgba(248, 248, 245, 0.78) 45%, rgba(17, 60, 108, 0.65) 100%),
+      url("https://static.fmgsuite.com/media/sideBySide/variantSize/29068a94-b113-4ded-aa43-5b203649ebbd.jpg");
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
     border-bottom: 1px solid var(--gray-line);
     position: relative;
   }
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(248, 248, 245, 0.05) 0%, rgba(248, 248, 245, 0.4) 100%);
+    pointer-events: none;
+  }
+  .hero .container { position: relative; z-index: 1; }
   .hero .container { display: grid; grid-template-columns: 1.3fr 1fr; gap: 4rem; align-items: center; }
   .forbes-badge {
     display: inline-flex;
@@ -405,21 +418,37 @@
   .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.6rem; }
   .service {
     background: var(--bg);
-    padding: 2.4rem;
     border: 1px solid var(--gray-line);
     border-radius: 2px;
+    overflow: hidden;
     display: flex;
-    gap: 1.6rem;
+    flex-direction: column;
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+  .service:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(17, 60, 108, 0.12); }
+  .service-photo {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-bottom: 3px solid var(--gold);
+  }
+  .service-body {
+    padding: 2rem;
+    display: flex;
+    gap: 1.2rem;
     align-items: flex-start;
+    flex: 1;
   }
   .service-icon {
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
     flex-shrink: 0;
     color: var(--gold);
     background: rgba(192, 141, 44, 0.08);
     border-radius: 2px;
-    padding: 10px;
+    padding: 9px;
   }
   .service h3 { margin-bottom: 0.5rem; }
   .service p { color: var(--text-muted); font-size: 0.95rem; }
@@ -707,40 +736,52 @@
     </div>
     <div class="services-grid">
       <div class="service">
-        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/>
-        </svg>
-        <div>
-          <h3>Retirement Transition Planning</h3>
-          <p>For pre-retirees and retirees relocating to Florida or preparing for the shift from earning to spending. Domicile establishment, homestead exemption, estate plan updates aligned with Florida law, and income portfolio construction.</p>
+        <img class="service-photo" src="https://static.fmgsuite.com/media/WebsiteBoxImage/originalSize/c6064833-3a6a-4f2f-9d29-0a5f6024503f.jpg" alt="Pre-retirees and retirees planning their financial transition">
+        <div class="service-body">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/>
+          </svg>
+          <div>
+            <h3>Retirement Transition Planning</h3>
+            <p>For pre-retirees and retirees relocating to Florida or preparing for the shift from earning to spending. Domicile establishment, homestead exemption, estate plan updates aligned with Florida law, and income portfolio construction.</p>
+          </div>
         </div>
       </div>
       <div class="service">
-        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M3 7h18M3 12h18M3 17h18M7 4v3M17 4v3M7 17v3M17 17v3"/>
-        </svg>
-        <div>
-          <h3>Business Exit and Liquidity Events</h3>
-          <p>For founders and operators selling companies in the $5M to $50M range. Pre-sale tax mitigation, entity structuring, deferred sale strategies, and the implementation of multigenerational trusts post-close.</p>
+        <img class="service-photo" src="https://static.fmgsuite.com/media/WebsiteBoxImage/originalSize/ccf8a71e-532d-4958-85c6-b8c32ce36eb6.jpg" alt="Business owners preparing for a liquidity event or company sale">
+        <div class="service-body">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M3 7h18M3 12h18M3 17h18M7 4v3M17 4v3M7 17v3M17 17v3"/>
+          </svg>
+          <div>
+            <h3>Business Exit and Liquidity Events</h3>
+            <p>For founders and operators selling companies in the $5M to $50M range. Pre-sale tax mitigation, entity structuring, deferred sale strategies, and the implementation of multigenerational trusts post-close.</p>
+          </div>
         </div>
       </div>
       <div class="service">
-        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <circle cx="12" cy="8" r="3"/>
-          <path d="M6 20c0-3 3-5 6-5s6 2 6 5M3 22c0-4 4-7 9-7s9 3 9 7"/>
-        </svg>
-        <div>
-          <h3>Multigenerational Wealth and Family Office</h3>
-          <p>For families coordinating wealth across three or more generations. Family governance, education for inheritors, philanthropy strategy, and integration of advisors who serve different generations under a single coordinated plan.</p>
+        <img class="service-photo" src="https://static.fmgsuite.com/media/WebsiteBoxImage/originalSize/6569f081-27d6-4249-ae08-be6872192f98.jpg" alt="Multigenerational family coordinating wealth across generations">
+        <div class="service-body">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <circle cx="12" cy="8" r="3"/>
+            <path d="M6 20c0-3 3-5 6-5s6 2 6 5M3 22c0-4 4-7 9-7s9 3 9 7"/>
+          </svg>
+          <div>
+            <h3>Multigenerational Wealth and Family Office</h3>
+            <p>For families coordinating wealth across three or more generations. Family governance, education for inheritors, philanthropy strategy, and integration of advisors who serve different generations under a single coordinated plan.</p>
+          </div>
         </div>
       </div>
       <div class="service">
-        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/>
-        </svg>
-        <div>
-          <h3>Investment Management with Rising-Income Focus</h3>
-          <p>Portfolios built around income streams that can grow with inflation, not just preserve principal. Core strategy combines dividend-growth equities, tax-managed positioning, and structured income solutions calibrated to your withdrawal needs.</p>
+        <img class="service-photo" src="https://static.fmgsuite.com/media/WebsiteBoxImage/originalSize/d6c6c7b6-034f-4422-a714-831e887b605b.jpg" alt="High-net-worth individuals overseeing a sophisticated portfolio">
+        <div class="service-body">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/>
+          </svg>
+          <div>
+            <h3>Investment Management with Rising-Income Focus</h3>
+            <p>Portfolios built around income streams that can grow with inflation, not just preserve principal. Core strategy combines dividend-growth equities, tax-managed positioning, and structured income solutions calibrated to your withdrawal needs.</p>
+          </div>
         </div>
       </div>
     </div>
